@@ -1,0 +1,19 @@
+#ga {
+  background-color: green;
+  display: flex;
+  margin: 50px;
+  font-size: 10px;
+  background-size: 10px;
+}
+
+#wrap {
+  background-color: green;
+  margin-top: 50px;
+}
+
+#a, #b, #c, #d, #e, #f, #g, #h, #i, #j, #k, #l, #m, #n, #o, #p {
+  background-color: red;
+  margin: 50px;
+  width: 5px;
+  height: 5px;
+}

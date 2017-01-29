@@ -5,38 +5,48 @@
   width: 105px;
   margin: auto;
 }
-
+#warps{
+  background-color: green;
+  padding-top: 20px;
+  height: 505px;
+}
 #wrap {
   background-color: green;
+  display: block;
   margin-top: 100px;
-  height: 505px;
+  height: 200px;
   display: flex;
-  justify-content: space-between;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
 }
-
-#front {
-  background-color: red;
-  height: 50px;
-  width: 50px;
-  margin: 20px;
-  position: absolute;
-  transform: perspective(600px) rotateY (0deg)
-  transition: transform .5s linear 0s;
-
-} 
-
-#back {
-  position: absolute;
-  transform: perspective(600px) rotateY (180deg);
-  background-color: red;
-  height: 50px;
-  width: 50px;
-  margin: 20px;
-  transition: transform .5s linear 0s;
-}
-
-#wra {
-  background-color: red;
+#parw {
+  background-color: green;
+  display: block;
   margin-top: 100px;
-  height: 50px;
+  height: 200px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.front, .back {
+  width: 100px;
+  height: 100px;
+  backface-visibility: hidden;
+  transition: transform 0.3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.one, .two, .three, .four, .five, .six, .seven, .eight{
+  position: relative;
+
+}
+.front {
+  transform: rotateY(-180deg);
+  position: absolute;
+  top: 0px;
+  left: 0px; 
 }

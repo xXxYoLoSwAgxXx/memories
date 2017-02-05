@@ -1,3 +1,28 @@
+function shuffleDat(){
+  var orderDat = []
+
+  for (var i = 8; i > 0; i--) {
+    orderDat.push(i); 
+    console.log(orderDat)
+  }
+  var knewDat = []
+  for (var i = 8; i > 0; i--){
+    reDat = orderDat.splice(Math.floor(Math.random() * i), 1)[0];
+    knewDat.push(reDat);
+  }
+  
+  document.getElementById("first").style.order = knewDat[0];
+  document.getElementById("second").style.order = knewDat[1];
+  document.getElementById("third").style.order = knewDat[2];
+  document.getElementById("fourth").style.order = knewDat[3];
+  document.getElementById("fifth").style.order = knewDat[4];
+  document.getElementById("sixth").style.order = knewDat[5];
+  document.getElementById("seventh").style.order = knewDat[6];
+  document.getElementById("eighth").style.order = knewDat[7];
+
+}
+window.onload = shuffleDat;
+
 var firstFlip = 0;
 var secondFlip = 0;
 var flipCounter = 0;
@@ -84,16 +109,16 @@ function checkDat(){
         document.getElementById("eighth").style.display = "none";
       }
 
-        flipCounter = 0;
-        firstFlip = 0;
-        secondFlip = 0; 
+
+      flipCounter = 0;
+      firstFlip = 0;
+      secondFlip = 0; 
     }
   }, 1500);
 
   setTimeout(
     function delay(){
       if(flipCounter == 2 && firstFlip != secondFlip){
-        //console.log("no match");
         flipCounter = 0;
         firstFlip = 0;
         secondFlip = 0;

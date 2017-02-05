@@ -3,12 +3,12 @@ function shuffleDat(){
 
   for (var i = 8; i > 0; i--) {
     orderDat.push(i); 
-    console.log(orderDat)
   }
   var knewDat = []
   for (var i = 8; i > 0; i--){
     reDat = orderDat.splice(Math.floor(Math.random() * i), 1)[0];
     knewDat.push(reDat);
+    console.log(knewDat)
   }
   
   document.getElementById("first").style.order = knewDat[0];

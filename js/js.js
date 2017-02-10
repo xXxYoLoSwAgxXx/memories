@@ -83,6 +83,7 @@ function changeh(){
   flipCounter++;
 
 }
+var count = 0
 
 function checkDat(){
   console.log(firstFlip);
@@ -95,18 +96,26 @@ function checkDat(){
       if(firstFlip == 1){
         document.getElementById("first").style.display = "none";
         document.getElementById("fifth").style.display = "none";
+        count++
+        document.getElementById("points").innerText = "point: " + count;      
       }
       if(firstFlip == 2){
         document.getElementById("second").style.display = "none";
         document.getElementById("sixth").style.display = "none";
+        count++
+        document.getElementById("points").innerText = "point: " + count;
       }
       if(firstFlip == 3){
         document.getElementById("third").style.display = "none";
         document.getElementById("seventh").style.display = "none";
+        count++
+        document.getElementById("points").innerText = "point: " + count;
       }
       if(firstFlip == 4){
         document.getElementById("fourth").style.display = "none";
         document.getElementById("eighth").style.display = "none";
+        count++  
+        document.getElementById("points").innerText = "point: " + count;
       }
 
 

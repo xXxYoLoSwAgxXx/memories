@@ -1,0 +1,52 @@
+#ga {
+  background-color: blue;
+  font-size: 25spx;
+  height: 75px;
+  width: 105px;
+  margin: auto;
+}
+#warps{
+  background-color: green;
+  padding-top: 20px;
+  height: 505px;
+}
+#wrap {
+  background-color: green;
+  display: block;
+  margin-top: 100px;
+  height: 200px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+#parw {
+  background-color: green;
+  display: block;
+  margin-top: 100px;
+  height: 200px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.front, .back {
+  width: 100px;
+  height: 100px;
+  backface-visibility: hidden;
+  transition: transform 0.3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.one, .two, .three, .four, .five, .six, .seven, .eight{
+  position: relative;
+
+}
+.front {
+  transform: rotateY(-180deg);
+  position: absolute;
+  top: 0px;
+  left: 0px; 
+}
